@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Impressions</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #5a189a, #ffd60a);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .btn {
+            display: block;
+            width: 250px;
+            margin: 20px auto;
+            padding: 15px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-order {
+            background-color: #ffd60a;
+            color: #5a189a;
+        }
+
+        .btn-designs {
+            background-color: #9d4edd;
+            color: white;
+        }
+
+        .btn-prints {
+            background-color: #ffea00;
+            color: #5a189a;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+
+        footer {
+            margin-top: 100px;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    3D Impressions
+</header>
+
+<div class="container">
+    <button class="btn btn-order" onclick="goToPage('encargar.html')">
+        Encargar Producto
+    </button>
+
+    <button class="btn btn-designs" onclick="goToPage('disenos.html')">
+        Ver Diseños
+    </button>
+
+    <button class="btn btn-prints" onclick="goToPage('impresiones.html')">
+        Impresiones 3D
+    </button>
+</div>
+
+<footer>
+    © 2026 3D Impressions - Todos los derechos reservados
+</footer>
+
+<script>
+    function goToPage(page) {
+        window.location.href = page;
+    }
+</script>
+
+</body>
+</html>
