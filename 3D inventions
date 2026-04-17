@@ -1,61 +1,95 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impresión 3D</title>
+  <title>Hama Beads & Impresión 3D</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      background: linear-gradient(135deg, #4c1d95, #fde047);
+      color: #1e1b4b;
     }
 
-    .container {
+    header {
       text-align: center;
+      padding: 40px 20px;
+      background: rgba(255,255,255,0.1);
     }
 
-    h1 {
-      margin-bottom: 40px;
+    header h1 {
+      margin: 0;
       font-size: 2.5rem;
+      color: #fff;
     }
 
-    .buttons {
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #fff;
+      font-style: italic;
+    }
+
+    nav {
       display: flex;
-      gap: 20px;
       justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      padding: 20px;
     }
 
-    button {
-      padding: 15px 30px;
-      font-size: 1.1rem;
+    .btn {
+      padding: 15px 25px;
+      background: #fde047;
       border: none;
-      border-radius: 12px;
+      border-radius: 10px;
       cursor: pointer;
-      background: #38bdf8;
-      color: #0f172a;
+      font-weight: bold;
       transition: 0.3s;
     }
 
-    button:hover {
-      background: #0ea5e9;
+    .btn:hover {
+      background: #facc15;
       transform: scale(1.05);
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+
+    .whatsapp:hover {
+      background: #1ebe5d;
+      transform: scale(1.1);
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Impresión 3D</h1>
-    <div class="buttons">
-      <button onclick="alert('Sección de Proyectos')">Proyectos</button>
-      <button onclick="alert('Sección de Encargar')">Encargar</button>
-      <button onclick="alert('Sección de Diseños')">Diseños</button>
-    </div>
-  </div>
+
+  <header>
+    <h1>Hama Beads & Impresión 3D</h1>
+    <p>Creating what you want</p>
+  </header>
+
+  <nav>
+    <button class="btn" onclick="alert('Encargos')">Encargos</button>
+    <button class="btn" onclick="alert('Diseños')">Diseños</button>
+    <button class="btn" onclick="alert('Llaveros')">Llaveros</button>
+    <button class="btn" onclick="alert('Figuras')">Figuras</button>
+    <button class="btn" onclick="alert('Lo más vendido')">Lo más vendido</button>
+  </nav>
+
+  <a class="whatsapp" href="https://wa.me/" target="_blank">Contactar por WhatsApp</a>
+
 </body>
 </html>
