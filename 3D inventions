@@ -7,19 +7,23 @@
   <style>
     * { box-sizing: border-box; }
 
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #4c1d95, #fde047);
       color: white;
+    }
+
+    body {
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
     }
 
     header {
       text-align: center;
-      padding: 30px 15px;
+      padding: 25px 15px;
     }
 
     header h1 {
@@ -48,17 +52,12 @@
       max-width: 600px;
     }
 
-    /* Grid adaptable */
     @media (min-width: 600px) {
-      nav {
-        grid-template-columns: repeat(2, 1fr);
-      }
+      nav { grid-template-columns: repeat(2, 1fr); }
     }
 
     @media (min-width: 900px) {
-      nav {
-        grid-template-columns: repeat(3, 1fr);
-      }
+      nav { grid-template-columns: repeat(3, 1fr); }
     }
 
     .btn {
@@ -89,8 +88,8 @@
 
     footer {
       text-align: center;
-      padding: 12px;
-      font-size: 0.85rem;
+      padding: 10px;
+      font-size: 0.8rem;
       background: rgba(0,0,0,0.25);
     }
 
