@@ -4,23 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hama Beads & Impresión 3D</title>
+
   <style>
     * { box-sizing: border-box; }
 
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
     }
 
     body {
-      min-height: 100dvh; /* viewport real en móviles */
-      display: flex;
-      flex-direction: column;
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
       font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #4c1d95, #fde047);
       color: white;
-      padding-bottom: env(safe-area-inset-bottom);
     }
 
     header {
@@ -41,7 +40,6 @@
     }
 
     main {
-      flex: 1; /* empuja el footer abajo */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -53,7 +51,6 @@
       gap: 15px;
       width: 100%;
       max-width: 720px;
-      /* 🔥 clave: siempre muestra todos los botones en cualquier pantalla */
       grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     }
 
@@ -87,7 +84,7 @@
 
     footer {
       text-align: center;
-      padding: 12px;
+      padding: 20px 12px;
       font-size: 0.8rem;
       background: rgba(0,0,0,0.25);
     }
@@ -110,9 +107,9 @@
     .whatsapp:hover {
       transform: scale(1.08);
     }
-
   </style>
 </head>
+
 <body>
 
   <header>
@@ -134,7 +131,9 @@
     © 2026 Hama Beads & 3D - Todos los derechos reservados
   </footer>
 
-  <a class="whatsapp" href="https://wa.me/" target="_blank">WhatsApp</a>
+  <a class="whatsapp" href="https://wa.me/50412345678" target="_blank">
+    WhatsApp
+  </a>
 
 </body>
 </html>
