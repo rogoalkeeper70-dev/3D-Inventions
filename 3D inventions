@@ -1,146 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hama Beads & Impresión 3D</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hama Beads & Impresión 3D</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    html {
-      height: -webkit-fill-available;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4c1d95, #fde047);
+  color: white;
+}
 
-    body {
-      min-height: 100vh;
-      min-height: -webkit-fill-available;
+header {
+  text-align: center;
+  padding: 28px 16px 10px;
+}
 
-      display: flex;
-      flex-direction: column;
+header h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
 
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #4c1d95, #fde047);
-      color: white;
-    }
+header p {
+  margin-top: 8px;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-style: italic;
+}
 
-    header {
-      text-align: center;
-      padding: 28px 16px 10px;
-    }
+main {
+  padding: 40px 20px 100px;
+}
 
-    header h1 {
-      font-size: clamp(1.8rem, 4vw, 3rem);
-    }
+nav {
+  display: grid;
+  gap: 15px;
+  width: 100%;
+  max-width: 720px;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
 
-    header p {
-      margin-top: 8px;
-      font-size: clamp(1rem, 2.5vw, 1.2rem);
-      font-style: italic;
-      opacity: 0.95;
-    }
+.btn {
+  padding: 16px;
+  border-radius: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
 
-    main {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      padding-bottom: 80px; /* espacio para WhatsApp */
-    }
+.btn:nth-child(odd) {
+  background: #fde047;
+  color: #4c1d95;
+}
 
-    nav {
-      display: grid;
-      gap: 15px;
-      width: 100%;
-      max-width: 720px;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    }
+.btn:nth-child(even) {
+  background: #7c3aed;
+  color: white;
+}
 
-    .btn {
-      display: inline-block;
-      text-align: center;
-      text-decoration: none;
-
-      padding: 16px 14px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 14px;
-      cursor: pointer;
-      font-weight: bold;
-
-      transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
-
-      width: 100%;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
-    }
-
-    .btn:nth-child(odd) {
-      background: #fde047;
-      color: #4c1d95;
-    }
-
-    .btn:nth-child(even) {
-      background: #7c3aed;
-      color: white;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px) scale(1.03);
-      opacity: 0.95;
-      box-shadow: 0 10px 18px rgba(0,0,0,0.25);
-    }
-
-    .whatsapp {
-      position: fixed;
-      bottom: 16px;
-      right: 16px;
-
-      background: #25D366;
-      color: white;
-
-      padding: 12px 16px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: bold;
-
-      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
-      transition: transform 0.15s ease;
-
-      font-size: clamp(0.8rem, 2vw, 1rem);
-    }
-
-    .whatsapp:hover {
-      transform: scale(1.08);
-    }
-  </style>
+.whatsapp {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background: #25D366;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Hama Beads & Impresión 3D</h1>
-    <p>Creating what you want</p>
-  </header>
+<header>
+  <h1>Hama Beads & Impresión 3D</h1>
+  <p>Creating what you want</p>
+</header>
 
-  <main>
-    <nav>
-      <a class="btn" href="#">Encargar Producto</a>
-      <a class="btn" href="#">Ver Diseños</a>
-      <a class="btn" href="#">Impresiones 3D</a>
-      <a class="btn" href="#">Llaveros</a>
-      <a class="btn" href="#">Lo más vendido</a>
-    </nav>
-  </main>
+<main>
+  <nav>
+    <a class="btn" href="#">Encargar Producto</a>
+    <a class="btn" href="#">Ver Diseños</a>
+    <a class="btn" href="#">Impresiones 3D</a>
+    <a class="btn" href="#">Llaveros</a>
+    <a class="btn" href="#">Lo más vendido</a>
+  </nav>
+</main>
 
-  <!-- CAMBIA EL NÚMERO -->
-  <a class="whatsapp" href="https://wa.me/50412345678?text=Hola,%20quiero%20información" target="_blank">
-    WhatsApp
-  </a>
+<a class="whatsapp" href="https://wa.me/50412345678">
+  WhatsApp
+</a>
 
 </body>
 </html>
