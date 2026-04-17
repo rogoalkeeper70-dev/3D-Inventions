@@ -1,107 +1,40 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hama Beads & Impresión 3D</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
       margin: 0;
-      font-size: clamp(1.8rem, 5vw, 2.5rem);
-      color: #fff;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4c1d95, #fde047);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3rem);
     }
 
     header p {
       margin-top: 10px;
       font-size: clamp(1rem, 3vw, 1.2rem);
-      color: #fff;
       font-style: italic;
     }
 
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-      padding: 20px;
-    }
-
-    .btn {
-      padding: 15px 20px;
-      min-width: 140px;
-      font-size: 1rem;
-      background: #fde047;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #facc15;
-      transform: scale(1.05);
-    }
-
-    .whatsapp {
-      position: fixed;
-      bottom: 15px;
-      right: 15px;
-      background: #25D366;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      transition: 0.3s;
-      font-size: 0.9rem;
-    }
-
-    .whatsapp:hover {
-      background: #1ebe5d;
-      transform: scale(1.1);
-    }
-
-    /* Responsive ajustes */
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .btn {
-        width: 90%;
-        max-width: 300px;
-      }
-
-      .whatsapp {
-        font-size: 0.8rem;
-        padding: 10px 14px;
-      }
-    }
-
-    @media (max-width: 400px) {
-      header {
-        padding: 20px 10px;
-      }
-
-      .btn {
-        font-size: 0.9rem;
-        padding: 12px;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Hama Beads & Impresión 3D</h1>
-    <p>Creating what you want</p>
-  </header>
-
-  <nav>
-    <button class="btn" onclick="alert('Encargos')">Encargos</button>
-    <button class="btn" onclick="alert('Diseños')">Diseños</button>
-    <button class="btn" onclick="alert('Llaveros')">Llaveros</button>
-    <button class="btn" onclick="alert('Figuras')">Figuras</button>
-    <button class="btn" onclick="alert('Lo más vendido')">Lo más vendido</button>
-  </nav>
-
-  <a class="whatsapp" href="https://wa.me/" target="_blank">WhatsApp</a>
-
-</body>
-</html>
+    main {
+      flex: 1;
+      display: fle
